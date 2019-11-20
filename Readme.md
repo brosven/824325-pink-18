@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Забродин](https://up.htmlacademy.ru/adaptive/18/user/824325).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).
 
 ---
 

@@ -1,12 +1,173 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="#" width="75" height="22" alt="логотип пинк">
+    </a>
+
+    <nav class="main-nav">
+      <button class="main-nav__toggle button" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item current">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photos.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Приложение пинк</h1>
+
+    <section class="download-app">
+      <h2 class="visually-hidden">Скачать приложение пинк</h2>
+
+      <b class="download-app__header">Взгляните на жизнь
+        иначе!</b>
+
+      <div class="download-app__wrapper">
+        <a href="https://www.apple.com/ru/ios/app-store/" class="download-app__button button">Скачать приложение</a>
+        <ul class="download-app__list markets-list">
+          <li class="markets-list__item">
+            <a class="markets-list__link" href="https://www.apple.com/ru/ios/app-store/"><span
+                class="visually-hidden">Скачать приложение на ios</span></a>
+          </li>
+          <li class="markets-list__item">
+            <a class="markets-list__link" href="https://play.google.com/store/apps?hl=ru"><span
+                class="visually-hidden">Скачать приложение на android</span></a>
+          </li>
+          <li class="markets-list__item">
+            <a class="markets-list__link" href="https://www.microsoft.com/ru-ru/store/apps/windows"><span
+                class="visually-hidden">Скачать приложение на windows</span></a>
+          </li>
+        </ul>
+        <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <header class="advantages__header">
+        <p class="advantages__tagline">Устали от серости мегаполиса?</p>
+        <p class="advantages__tagline">Нам есть, что вам предложить!</p>
+      </header>
+      <div class="advantages__first">
+        <h3 class="advantages__text-header">Поднимает настроение</h3>
+        <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
+          кликов!</p>
+      </div>
+      <div class="advantages__first">
+        <h3 class="advantages__text-header">Меняет мир вокруг</h3>
+        <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+          эффект</p>
+      </div>
+      <div class="advantages__first">
+        <h3 class="advantages__text-header">Заводит новых друзей</h3>
+        <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+      </div>
+
+      <img src="#" width="157" height="320" alt="мокап приложения пинк">
+    </section>
+
+    <article class="reviews">
+      <h2 class="visually-hidden">Отзывы пользователей</h2>
+      <blockquote class="reviews__block">
+        <cite class="reviews__author">Николай Петров</cite>
+        <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+          вещи! А еще я
+          познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </blockquote>
+      <button type="button" class="reviews__button"></button>
+      <button type="button" class="reviews__button"></button>
+      <button type="button" class="reviews__button"></button>
+    </article>
+
+    <section class="rates">
+      <h2 class="visually-hidden">Тарифы</h2>
+
+      <ul class="rates__list rate-list">
+        <li class="rate-list__item rate-list__item--header">
+          <b>База</b>
+          <span>1,99 USD</span>
+        </li>
+        <li class="rate-list__item">Розовый фильтр</li>
+        <li class="rate-list__item">Смайлики</li>
+        <li class="rate-list__item">Комментарии</li>
+      </ul>
+
+      <ul class="rates__list rate-list">
+        <li class="rate-list__item rate-list__item--header">
+          <b>Стандарт</b>
+          <span>3,99 USD</span>
+        </li>
+        <li class="rate-list__item">Розовый фильтр</li>
+        <li class="rate-list__item">Смайлики</li>
+        <li class="rate-list__item">Комментарии</li>
+      </ul>
+
+      <ul class="rates__list rate-list">
+        <li class="rate-list__item rate-list__item--header">
+          <b>АНЛИМ</b>
+          <span>9,99 USD</span>
+        </li>
+        <li class="rate-list__item">Розовый фильтр</li>
+        <li class="rate-list__item">Смайлики</li>
+        <li class="rate-list__item">Комментарии</li>
+      </ul>
+
+      <button class="rates__button"></button>
+      <button class="rates__button"></button>
+      <button class="rates__button"></button>
+    </section>
+
+    <section class="communication">
+      <h2 class="visually-hidden">Связь с нами</h2>
+
+      <p class="communication__header">Остались вопросы?
+        Свяжитесь с нами!</p>
+
+      <ul class="communication__list communication-list">
+        <li class="communication-list__item">
+          <b>Звоните:</b>
+          <p><a href="#">+7 (812) 555-66-66</a></p>
+        </li>
+        <li class="communication-list__item">
+          <b>Пишите:</b>
+          <p><a href="#">mail@htmlacademy.ru</a></p>
+        </li>
+        <li class="communication-list__item">
+          <b>Приезжайте в гости:</b>
+          <p><a href="#">ул. Большая
+              Конюшенная, 19/8</a></p>
+        </li>
+      </ul>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Как нас найти</h2>
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A225df2dc865b8612eb89c318a080ea093858947e5517a85ed926f169b1bf9fd0&amp;source=constructor"
+        width="500" height="400"></iframe>
+    </section>
+  </main>
+</body>
+
 </html>
