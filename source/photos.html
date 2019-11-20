@@ -9,7 +9,7 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="#" width="75" height="22">
+      <img class="page-header__logo-image" src="#" width="75" height="22" alt="логотип пинк">
     </a>
 
     <nav class="main-nav">
@@ -36,10 +36,9 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__header">Фотографии пользователей</h1>
 
     <section class="users-photos">
-      <h2 class="visually-hidden">Фотографии наших пользователей</h2>
+      <h1 class="users-photos__header">Фотографии пользователей</h1>
 
       <p class="users-photos__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
         ваших?</p>
@@ -173,10 +172,10 @@
         <input type="range" id="editing-crop">
 
         <label for="editing-fill" class="visually-hidden">Настройка заливки</label>
-        <input type="range">
+        <input type="range" id="editing-fill">
 
         <label for="editing-contrast" class="visually-hidden">Настройка контраста</label>
-        <input type="range">
+        <input type="range" id="editing-contrast">
 
         <div class="editing-photo__buttons-wrapper">
           <button type="submit">Запостить</button>
