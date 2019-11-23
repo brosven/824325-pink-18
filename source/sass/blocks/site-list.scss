@@ -4,6 +4,11 @@
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1.78;
+
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
 }
 
 .site-list__item {
@@ -11,4 +16,8 @@
   padding-bottom: 19px;
   padding-left: 89px;
   padding-right: 88px;
+}
+
+.site-list__link {
+  color: inherit;
 }
