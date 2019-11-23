@@ -4,16 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="#" width="75" height="22" alt="логотип пинк">
+      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+        alt="логотип пинк">
     </a>
 
     <nav class="main-nav">
-      <button class="main-nav__toggle button" type="button">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
@@ -36,16 +38,20 @@
   </header>
 
   <main class="page-main">
-    
-    <div class="page-introducion">
-      <h1 class="page-introducion__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+
+    <div class="page-introducion page-representation">
+      <h1 class="page-introducion__header page-representation__header">Конкурс на самое безбашенное путешествие с Пинк
+      </h1>
     </div>
 
     <section class="data-collection">
       <h2 class="visually-hidden">Заполните все обязательные поля</h2>
-      <p class="data-collection__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
-        вашу бонусную
-        карту! Пожалуйста, заполните форму ниже:</p>
+
+      <div class="call">
+        <p class="call__text--long">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
+          вашу бонусную
+          карту! <span class="visually-hidden">Пожалуйста, заполните форму ниже:</span></p>
+      </div>
 
       <form action="https://echo.htmlacademy.ru" method="post" class="data-collection__form form">
         <fieldset class="form__full-name">
@@ -116,22 +122,22 @@
   </main>
 
   <footer class="page-footer">
-    <img src="#" width="146" height="40" alt="логотип приложения пинк">
+    <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="логотип приложения пинк">
 
     <ul class="page-footer__list social-list">
       <li class="social-list__item">
-        <a class="social-list__link" href="#">Мы в Твитере</a>
+        <a class="social-list__link" href="#"><span class="visually-hidden">Мы в Твитере</span></a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link" href="#">Мы в Фейсбуке</a>
+        <a class="social-list__link" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link" href="#">Мы в Ютубе</a>
+        <a class="social-list__link" href="#"><span class="visually-hidden">Мы в Ютубе</span></a>
       </li>
     </ul>
 
     <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
+      <p class="copyright__text">Разработано:</p>
       <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>

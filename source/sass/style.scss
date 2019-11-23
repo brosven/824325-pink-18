@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/opensans.woff2);
+  src: url(../fonts/opensans.woff);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url(../fonts/opensans.woff2);
+  src: url(../fonts/opensans.woff);
+  src: url(../fonts/opensansbold.woff2);
+  src: url(../fonts/opensansbold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url(../fonts/opensanslight.woff2);
+  src: url(../fonts/opensanslight.woff);
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: 'OpenSans', 'OpenSansBold', 'OpenSansLight', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: #283645;
+
+  background-color: #ffffff;
+}
+
+ul {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@import 'blocks/page-header.scss';
+@import 'blocks/main-nav.scss';
+@import 'blocks/download-app.scss';
+@import 'blocks/site-list.scss';
+@import 'variables.scss';
+@import 'blocks/advantages.scss';
+@import 'blocks/representation.scss';
+@import 'blocks/call.scss';
+@import 'blocks/comment.scss';
