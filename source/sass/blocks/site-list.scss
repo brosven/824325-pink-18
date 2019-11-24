@@ -20,4 +20,11 @@
 
 .site-list__link {
   color: inherit;
+  &:hover{
+    color: #d22856;
+  }
+  &:active {
+    color: #ffffff;
+    opacity: 0.3;
+  }
 }
