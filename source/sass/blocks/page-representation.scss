@@ -1,5 +1,5 @@
 .page-representation {
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
 
   min-height: 462px;
@@ -11,8 +11,8 @@
 
   font-size: 24px;
   font-weight: normal;
-  color: #ffffff;
-  font-family: 'OpenSansLight';
+  color: $white;
+  font-family: "Open Sans";
   font-weight: 300;
 
   text-align: center;

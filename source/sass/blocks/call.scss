@@ -3,13 +3,14 @@
   padding-top: 37px;
   padding-bottom: 30px;
 
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .call__text--short {
   width: 253px;
 
-  font-family: 'OpenSans';
+  font-family: "Open Sans";
+  font-weight: 400;
   font-size: 14px;
   line-height: 30px;
 }
@@ -23,7 +24,8 @@
 .call__header {
   width: 204px;
 
-  font-family: 'OpenSansLight';
+  font-family: "Open Sans";
+  font-weight: 300;
   font-size: 24px;
   line-height: normal;
 }

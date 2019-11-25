@@ -1,15 +1,15 @@
 .download-app {
-  background-color: #283645;
+  background-color: $dark-blue;
   width: 320px;
 }
 
 .download-app__text {
   width: 230px;
 
-  font-family: 'OpenSansLight';
+  font-family: "Open Sans";
   line-height: 24px;
   font-weight: 300;
-  color: #ffffff;
+  color: $white;
 }
 
 .download-app__wrapper {

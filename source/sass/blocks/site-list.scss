@@ -1,6 +1,6 @@
 .site-list {
-  background-color: #283645;
-  color: #ffffff;
+  background-color: $dark-blue;
+  color: $white;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1.78;
@@ -20,11 +20,13 @@
 
 .site-list__link {
   color: inherit;
-  &:hover{
-    color: #d22856;
+
+  &:hover {
+    color: $lipstick;
   }
+
   &:active {
-    color: #ffffff;
+    color: $white;
     opacity: 0.3;
   }
 }
