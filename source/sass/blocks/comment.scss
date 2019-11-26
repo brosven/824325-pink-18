@@ -1,0 +1,22 @@
+.comment {
+  width: 280px;
+
+  background-color: $light-gray;
+  line-height: 24px;
+}
+
+.comment__header {
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
+.comment__time {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.comment__likes {
+  font-size: 12px;
+  color: $lipstick;
+}

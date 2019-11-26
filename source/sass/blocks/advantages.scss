@@ -1,0 +1,34 @@
+.advantages {
+  width: 320px;
+
+  text-align: center;
+
+  background-color: $light-gray;
+}
+
+.advantages__text-header {
+  width: 252px;
+
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $black;
+}
+
+.advantages__text {
+  width: 254px;
+
+  font-family: "Open Sans";
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.advantages__tagline {
+  width: 204px;
+
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: normal;
+}

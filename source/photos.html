@@ -4,31 +4,33 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="#" width="75" height="22" alt="логотип пинк">
+      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+        alt="логотип пинк">
     </a>
 
     <nav class="main-nav">
-      <button class="main-nav__toggle button" type="button">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item current">
-            <a href="index.html">Главная</a>
+            <a href="index.html" class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a>Фотографии</a>
+            <a class="site-list__link">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a>Конкурс</a>
+            <a href="form.html" class="site-list__link">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="site-list__link">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -39,18 +41,22 @@
 
 
     <section class="users-photos">
-      <h1 class="users-photos__header">Фотографии пользователей</h1>
 
-      <p class="users-photos__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
-        ваших?</p>
+      <div class="page-representation">
+        <h1 class="users-photos__header page-representation__header">Фотографии пользователей</h1>
+      </div>
+      <div class="call">
+        <p class="call__text call__text--short">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
+          ваших?</p>
+      </div>
 
       <div class="page-main__panorama panorama">
-        <a class="panorama__link" href="#">
-          <img src="#" width="660" height="509" alt="Панорама дня">
-        </a>
-        <p>ПАНОРАМА ДНЯ</p>
         <div class="panorama__comment comment">
-          <b class="comment__header">Анна (5 минут назад)</b>
+          <a class="panorama__link comment__link" href="#">
+            <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+          </a>
+          <p>ПАНОРАМА ДНЯ</p>
+          <p class="comment__header">Анна <span class="comment__time">(5 минут назад)</span></p>
           <p class="comment__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
             перископе, задавайте свои вопросы!</p>
 
@@ -63,11 +69,11 @@
 
       <ul class="users-photos__list photos-list">
         <li class="photos-list__item">
-          <a class="photos-list__link" href="#">
-            <img src="#" width="280" height="180" alt="Фотогрфия пользователя Левон">
-          </a>
           <div class="photos-list__comment comment">
-            <b class="comment__header">Левон (5 часов назад)</b>
+            <a class="photos-list__link comment__link" href="#">
+              <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотогрфия пользователя Левон">
+            </a>
+            <p class="comment__header">Левон <span class="comment__time">(5 часов назад)</span></p>
             <p class="comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
 
             <button type="button" class="comment__button">
@@ -77,11 +83,11 @@
           </div>
         </li>
         <li class="photos-list__item">
-          <a class="photos-list__link" href="#">
-            <img src="#" width="280" height="180" alt="Фотогрфия пользователя Антон">
-          </a>
           <div class="photos-list__comment comment">
-            <b class="comment__header">Антон (12 часов назад)</b>
+            <a class="photos-list__link comment__link" href="#">
+              <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотогрфия пользователя Антон">
+            </a>
+            <p class="comment__header">Антон <span class="comment__time">(12 часов назад)</span></p>
             <p class="comment__text">Соседи будут рады!</p>
 
             <button type="button" class="comment__button">
@@ -91,11 +97,11 @@
           </div>
         </li>
         <li class="photos-list__item">
-          <a class="photos-list__link" href="#">
-            <img src="#" width="280" height="180" alt="Фотогрфия пользователя Борис">
-          </a>
           <div class="photos-list__comment comment">
-            <b class="comment__header">Борис (20 часов назад)</b>
+            <a class="photos-list__link comment__link" href="#">
+              <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотогрфия пользователя Борис">
+            </a>
+            <p class="comment__header">Борис <span class="comment__time">(20 часов назад)</span></p>
             <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
 
             <button type="button" class="comment__button">
@@ -105,11 +111,11 @@
           </div>
         </li>
         <li class="photos-list__item">
-          <a class="photos-list__link" href="#">
-            <img src="#" width="280" height="180" alt="Фотогрфия пользователя Сергей">
-          </a>
           <div class="photos-list__comment comment">
-            <b class="comment__header">Сергей (25 часов назад)</b>
+            <a class="photos-list__link comment__link" href="#">
+              <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотогрфия пользователя Сергей">
+            </a>
+            <p class="comment__header">Сергей <span class="comment__time">(25 часов назад)</span></p>
             <p class="comment__text">Самая кубанская в мире!</p>
 
             <button type="button" class="comment__button">
@@ -119,11 +125,11 @@
           </div>
         </li>
         <li class="photos-list__item">
-          <a class="photos-list__link" href="#">
-            <img src="#" width="280" height="180" alt="Фотогрфия пользователя Максим">
-          </a>
           <div class="photos-list__comment comment">
-            <b class="comment__header">Максим (40 часов назад)</b>
+            <a class="photos-list__link comment__link" href="#">
+              <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотогрфия пользователя Максим">
+            </a>
+            <p class="comment__header">Максим <span class="comment__time">(40 часов назад)</span></p>
             <p class="comment__text">Где снег то?</p>
 
             <button type="button" class="comment__button">
@@ -133,11 +139,11 @@
           </div>
         </li>
         <li class="photos-list__item">
-          <a class="photos-list__link" href="#">
-            <img src="#" width="280" height="180" alt="Фотогрфия пользователя Надежда">
-          </a>
           <div class="photos-list__comment comment">
-            <b class="comment__header">Надежда (45 часов назад)</b>
+            <a class="photos-list__link comment__link" href="#">
+              <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотогрфия пользователя Надежда">
+            </a>
+            <p class="comment__header">Надежда <span class="comment__time">(45 часов назад)</span></p>
             <p class="comment__text">Всем GM и взаимные лайки!</p>
 
             <button type="button" class="comment__button">
@@ -153,7 +159,7 @@
 
     <section class="editing-photo">
       <h2 class="visually-hidden">Редактирование вашего фото</h2>
-      <img src="#" width="280" height="374" alt="Фотография дороги зимой">
+      <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фотография дороги зимой">
       <form action="https://echo.htmlacademy.ru" method="POST" class="editing-photo__form form">
         <ul class="editing-photo__list editing-list">
           <li class="editing-list__item">
@@ -187,22 +193,22 @@
   </main>
 
   <footer class="page-footer">
-    <img src="#" width="146" height="40" alt="логотип приложения пинк">
+    <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="логотип приложения пинк">
 
     <ul class="page-footer__list social-list">
       <li class="social-list__item">
-        <a class="social-list__link" href="#">Мы в Твитере</a>
+        <a class="social-list__link" href="#"><span class="visually-hidden">Мы в Твитере</span></a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link" href="#">Мы в Фейсбуке</a>
+        <a class="social-list__link" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link" href="#">Мы в Ютубе</a>
+        <a class="social-list__link" href="#"><span class="visually-hidden">Мы в Ютубе</span></a>
       </li>
     </ul>
 
     <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
+      <p class="copyright__text">Разработано:</p>
       <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>

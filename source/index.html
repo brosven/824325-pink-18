@@ -4,31 +4,33 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="#" width="75" height="22" alt="логотип пинк">
+      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+        alt="логотип пинк">
     </a>
 
     <nav class="main-nav">
-      <button class="main-nav__toggle button" type="button">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item current">
-            <a>Главная</a>
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photos.html">Фотографии</a>
+            <a href="photos.html" class="site-list__link">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+            <a href="form.html" class="site-list__link">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="site-list__link">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -41,11 +43,13 @@
     <section class="download-app">
       <h2 class="visually-hidden">Скачать приложение пинк</h2>
 
-      <b class="download-app__header">Взгляните на жизнь
-        иначе!</b>
+      <div class="download-app__representation page-representation">
+        <p class="page-representation__header">Взгляните на жизнь
+          иначе!</p>
+      </div>
 
       <div class="download-app__wrapper">
-        <a href="https://www.apple.com/ru/ios/app-store/" class="download-app__button button">Скачать приложение</a>
+        <a href="https://www.apple.com/ru/ios/app-store/" class="download-app__button button button__download">Скачать приложение</a>
         <ul class="download-app__list markets-list">
           <li class="markets-list__item">
             <a class="markets-list__link" href="https://www.apple.com/ru/ios/app-store/"><span
@@ -64,12 +68,14 @@
       </div>
     </section>
 
+    <div class="call">
+      <p class="call__header">Устали от серости мегаполиса?</p>
+      <p class="call__header">Нам есть, что вам предложить!</p>
+    </div>
+
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
-      <header class="advantages__header">
-        <p class="advantages__tagline">Устали от серости мегаполиса?</p>
-        <p class="advantages__tagline">Нам есть, что вам предложить!</p>
-      </header>
+
       <div class="advantages__first">
         <h3 class="advantages__text-header">Поднимает настроение</h3>
         <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
@@ -85,7 +91,7 @@
         <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
       </div>
 
-      <img src="#" width="157" height="320" alt="мокап приложения пинк">
+      <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="мокап приложения пинк">
     </section>
 
     <article class="reviews">

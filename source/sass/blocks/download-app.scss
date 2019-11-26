@@ -1,0 +1,18 @@
+.download-app {
+  background-color: $dark-blue;
+  width: 320px;
+}
+
+.download-app__text {
+  width: 230px;
+
+  font-family: "Open Sans";
+  line-height: 24px;
+  font-weight: 300;
+  color: $white;
+}
+
+.download-app__wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

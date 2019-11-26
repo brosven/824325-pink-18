@@ -1,0 +1,37 @@
+.button {
+  display: block;
+
+  box-sizing: border-box;
+
+  width: 281px;
+  min-height: 55px;
+
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: $white;
+  text-align: center;
+
+  background-color: transparent;
+
+  padding-top: 14px;
+  padding-bottom: 16px;
+
+  border: 3px solid $white;
+  border-radius: 35px;
+}
+
+.button__download {
+  &:hover {
+    background-color: $white;
+    color: $lipstick;
+  }
+
+  &:active {
+    background-color: $white;
+    color: $lipstick;
+    opacity: 0.3;
+  }
+}
