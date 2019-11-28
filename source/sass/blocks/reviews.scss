@@ -1,4 +1,19 @@
 .reviews {
-    background-color: $white;
-    width: 320px;
+  background-color: $white;
+  width: 320px;
+}
+
+.reviews__author {
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 30px;
+  color: $black;
+}
+
+.reviews__text {
+  width: 276px;
+
+  line-height: 30px;
+  text-align: center;
 }

@@ -35,3 +35,65 @@
     opacity: 0.3;
   }
 }
+
+.button__post {
+  width: 280px;
+
+  border: 3px solid $lipstick;
+
+  color: $lipstick;
+
+  &:hover {
+    background-color: $lipstick;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $lipstick;
+    color: $white-30;
+  }
+}
+
+.button__cancel {
+  width: 280px;
+
+  border: 3px solid $dark-blue;
+
+  color: $dark-blue;
+
+  opacity: 0.1;
+
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+
+    border: 0;
+
+    color: $white;
+
+    opacity: 0.3;
+  }
+}
+
+.button__send-form {
+  width: 276px;
+  height: 59px;
+
+  background-color: $green;
+
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    background-color: $dark-green;
+
+    color: $white-30;
+  }
+}

@@ -14,7 +14,7 @@
         <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
           alt="логотип пинк">
       </a>
-      <button class="main-nav__toggle" type="button">
+      <button class="page-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </div>
@@ -113,35 +113,46 @@
     <section class="rates">
       <h2 class="visually-hidden">Тарифы</h2>
 
-      <ul class="rates__list rate-list">
-        <li class="rate-list__item rate-list__item--header">
-          <b>База</b>
-          <span>1,99 USD</span>
-        </li>
-        <li class="rate-list__item">Розовый фильтр</li>
-        <li class="rate-list__item">Смайлики</li>
-        <li class="rate-list__item">Комментарии</li>
-      </ul>
+      <table class="rates__table rate-table">
+        <thead class="rate-table__header">
+          <tr>
+            <td class="rate-table__cell-header visually-hidden"></td>
+            <td class="rate-table__cell-header">
+              <p class="rate-table__text-header">База</p>
+              <p class="rate-table__text-price">1,99 USD</p>
+            </td>
+            <td class="rate-table__cell-header">
+              <p class="rate-table__text-header">Стандарт</p>
+              <p class="rate-table__text-price">3,99 USD</p>
+            </td>
+            <td class="rate-table__cell-header">
+              <p class="rate-table__text-header">АНЛИМ</p>
+              <p class="rate-table__text-price">9,99 USD</p>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="rate-table__body">
+            <td class="rate-table__cell visually-hidden">Розовый фильтр</td>
+            <td class="rate-table__cell">Розовый фильтр</td>
+            <td class="rate-table__cell">Розовый фильтр</td>
+            <td class="rate-table__cell">Розовый фильтр</td>
+          </tr>
+          <tr class="rate-table__body">
+            <td class="rate-table__cell visually-hidden">Смайлики</td>
+            <td class="rate-table__cell">Смайлики</td>
+            <td class="rate-table__cell">Смайлики</td>
+            <td class="rate-table__cell">Смайлики</td>
+          </tr>
+          <tr class="rate-table__body">
+            <td class="rate-table__cell visually-hidden">Комментарии</td>
+            <td class="rate-table__cell">Комментарии</td>
+            <td class="rate-table__cell">Комментарии</td>
+            <td class="rate-table__cell">Комментарии</td>
+          </tr>
+        </tbody>
+      </table>
 
-      <ul class="rates__list rate-list">
-        <li class="rate-list__item rate-list__item--header">
-          <b>Стандарт</b>
-          <span>3,99 USD</span>
-        </li>
-        <li class="rate-list__item">Розовый фильтр</li>
-        <li class="rate-list__item">Смайлики</li>
-        <li class="rate-list__item">Комментарии</li>
-      </ul>
-
-      <ul class="rates__list rate-list">
-        <li class="rate-list__item rate-list__item--header">
-          <b>АНЛИМ</b>
-          <span>9,99 USD</span>
-        </li>
-        <li class="rate-list__item">Розовый фильтр</li>
-        <li class="rate-list__item">Смайлики</li>
-        <li class="rate-list__item">Комментарии</li>
-      </ul>
 
       <button class="rates__button"></button>
       <button class="rates__button"></button>
@@ -156,16 +167,16 @@
 
       <ul class="communication__list communication-list">
         <li class="communication-list__item">
-          <b>Звоните:</b>
-          <p><a href="#">+7 (812) 555-66-66</a></p>
+          <p class="communication-list__header">Звоните:</p>
+          <p class="communication-list__text"><a class="communication-list__link" href="#">+7 (812) 555-66-66</a></p>
         </li>
         <li class="communication-list__item">
-          <b>Пишите:</b>
-          <p><a href="#">mail@htmlacademy.ru</a></p>
+          <p class="communication-list__header">Пишите:</p>
+          <p class="communication-list__text"><a class="communication-list__link" href="#">mail@htmlacademy.ru</a></p>
         </li>
         <li class="communication-list__item">
-          <b>Приезжайте в гости:</b>
-          <p><a href="#">ул. Большая
+          <p class="communication-list__header">Приезжайте в гости:</p>
+          <p class="communication-list__text"><a class="communication-list__link" href="#">ул. Большая
               Конюшенная, 19/8</a></p>
         </li>
       </ul>
@@ -174,7 +185,7 @@
       <h2 class="visually-hidden">Как нас найти</h2>
       <iframe
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A225df2dc865b8612eb89c318a080ea093858947e5517a85ed926f169b1bf9fd0&amp;source=constructor"
-        width="500" height="400"></iframe>
+        width="320" height="400"></iframe>
     </section>
   </main>
 </body>

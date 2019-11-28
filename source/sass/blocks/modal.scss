@@ -1,0 +1,21 @@
+.modal {
+  width: 320px;
+  background-color: $white;
+
+  text-align: center;
+}
+
+.modal__header {
+  font-size: 18px;
+  line-height: 24px;
+
+  color: $black;
+}
+
+.modal__text {
+  line-height: 24px;
+}
+
+.modal__button-wrapper {
+  background-color: $light-gray;
+}
