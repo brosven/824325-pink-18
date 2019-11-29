@@ -9,15 +9,17 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
-        alt="логотип пинк">
-    </a>
-
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+    <div class="page-header__top-menu">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+          alt="логотип пинк">
+      </a>
+      <button class="page-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+    </div>
+
+    <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item current">
@@ -46,7 +48,8 @@
         <h1 class="users-photos__header page-representation__header">Фотографии пользователей</h1>
       </div>
       <div class="call">
-        <p class="call__text call__text--short">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
+        <p class="call__text call__text--short">Взгляните на фотографии, которые выкладывают пользователи! Видите, как
+          не хватает
           ваших?</p>
       </div>
 
@@ -185,8 +188,8 @@
         <input type="range" id="editing-contrast">
 
         <div class="editing-photo__buttons-wrapper">
-          <button type="submit">Запостить</button>
-          <button type="button">Отмена</button>
+          <button type="submit" class="button button__post">Запостить</button>
+          <button type="button" class="button button__cancel">Отмена</button>
         </div>
       </form>
     </section>
