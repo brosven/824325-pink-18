@@ -44,8 +44,8 @@
 
     <section class="users-photos">
 
-      <div class="page-representation">
-        <h1 class="users-photos__header page-representation__header">Фотографии пользователей</h1>
+      <div class="page-representation page-representation--with-image">
+        <h1 class="users-photos__header page-representation__header page-representation__header--short">Фотографии пользователей</h1>
       </div>
       <div class="call">
         <p class="call__text call__text--short">Взгляните на фотографии, которые выкладывают пользователи! Видите, как
@@ -54,19 +54,22 @@
       </div>
 
       <div class="page-main__panorama panorama">
-        <div class="panorama__comment comment">
+        <div class="comment panorama__comment">
           <a class="panorama__link comment__link" href="#">
             <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
           </a>
           <p>ПАНОРАМА ДНЯ</p>
-          <p class="comment__header">Анна <span class="comment__time">(5 минут назад)</span></p>
-          <p class="comment__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
-            перископе, задавайте свои вопросы!</p>
 
-          <button type="button">
-            <span class="visually-hidden">Мне нравится</span>
-          </button>
-          <span class="comment__likes">Нравится: 215</span>
+          <div class="panorama__text-wrapper">
+            <p class="comment__header">Анна <span class="comment__time">(5 минут назад)</span></p>
+            <p class="comment__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
+              перископе, задавайте свои вопросы!</p>
+
+            <button type="button">
+              <span class="visually-hidden">Мне нравится</span>
+            </button>
+            <span class="comment__likes">Нравится: 215</span>
+          </div>
         </div>
       </div>
 

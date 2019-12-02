@@ -3,10 +3,50 @@
 
   width: 320px;
 
+  margin: 0 auto;
+
   background-color: $dark-blue;
 }
 
 
 .page-header__top-menu {
-  min-height: 69px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 22px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  border-bottom: 1px solid $black;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: $tablet-width;
+  }
+
+  .page-header__top-menu {
+    min-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    position: absolute;
+    top: 0;
+    left: 364px;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: $desktop-width;
+    background-color: $dark-blue-30;
+  }
+
+  .page-header__top-menu {
+    min-height: 60px;
+    border: none;
+  }
 }

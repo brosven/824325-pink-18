@@ -13,6 +13,69 @@
 }
 
 .download-app__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+.download-app__representation {
+  display: flex;
+
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 45px;
+}
+
+@media (min-width: $tablet-width) {
+  .download-app {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: $tablet-width;
+
+    background-image: url(../img/iphone-hand-tablet@1x.png), url(../img/bg-back-tablet@1x.jpg);
+    background-position: bottom, top;
+    background-repeat: no-repeat;
+  }
+
+  .download-app__representation {
+    padding-top: 203px;
+    padding-left: 65px;
+    padding-right: 45px;
+  }
+
+  .download-app__wrapper {
+    padding-top: 39px;
+    padding-bottom: 112px;
+    padding-left: 20px;
+    padding-right: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download-app {
+    width: $desktop-width;
+    min-height: 854px;
+
+    background-image: url(../img/iphone-hand-desktop@1x.png), url(../img/bg-back-desktop@1x.jpg);
+    background-position: bottom, top;
+    background-repeat: no-repeat;
+  }
+
+  .download-app__representation {
+    padding-top: 231px;
+    padding-left: 166px;
+  }
+
+  .download-app__wrapper {
+    padding-top: 60px;
+    padding-bottom: 125px;
+    padding-left: 130px;
+  }
 }

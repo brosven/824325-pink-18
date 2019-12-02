@@ -1,0 +1,31 @@
+@media (min-width: $tablet-width) {
+  .panorama {
+    width: $tablet-width;
+  }
+
+  .panorama__comment {
+    width: $tablet-width;
+
+    background-color: $white;
+  }
+
+  .panorama__text-wrapper {
+    width: 620px;
+
+    background-color: $light-gray;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panorama {
+    width: $desktop-width;
+  }
+
+  .panorama__comment {
+    width: $desktop-width;
+  }
+
+  .panorama__text-wrapper {
+    width: 920px;
+  }
+}
