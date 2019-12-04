@@ -1,51 +1,50 @@
 .page-header {
   color: $white;
 
-  width: 320px;
+  width: 100%;
 
   margin: 0 auto;
 
   background-color: $dark-blue;
 }
 
-
 .page-header__top-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  width: $mobile-width;
+
   padding-top: 22px;
   padding-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
+
+  margin: 0 auto;
 
   border-bottom: 1px solid $black;
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
-    width: $tablet-width;
-  }
-
   .page-header__top-menu {
+    width: $tablet-width;
     min-height: 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
-    position: absolute;
-    top: 0;
-    left: 364px;
-
+  .page-header__wrapper {
     display: flex;
     justify-content: space-between;
 
     width: $desktop-width;
+
+    margin: 0 auto;
+
     background-color: $dark-blue-30;
   }
 
   .page-header__top-menu {
+    width: 150px;
+
     min-height: 60px;
     border: none;
   }

@@ -1,15 +1,16 @@
 .call {
+  background-color: $white;
+}
+
+.call__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  width: 202px;
+  width: $mobile-width;
   padding-top: 37px;
   padding-bottom: 30px;
-  padding-left: 58px;
-  padding-right: 60px;
-
-  background-color: $white;
+  margin: 0 auto;
 }
 
 .call__header {
@@ -34,8 +35,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .call {
-    width: 542px;
+  .call__wrapper {
+    width: $tablet-width
   }
 
   .call__header {
@@ -64,8 +65,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .call {
-    width: 842px;
+  .call__wrapper {
+    width: $desktop-width;
 
     padding-top: 78px;
     padding-bottom: 75px;
