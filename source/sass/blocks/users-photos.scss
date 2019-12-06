@@ -1,7 +1,10 @@
 .users-photos__list {
   list-style: none;
+
+  width: $mobile-width;
+
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .users-photos__text {
@@ -9,4 +12,36 @@
 
   line-height: 30px;
   text-align: center;
+}
+
+.users-photos__item {
+  width: 280px;
+
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .users-photos__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: $tablet-width;
+  }
+
+  .users-photos__item {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .users-photos__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: $desktop-width;
+  }
 }

@@ -1,15 +1,24 @@
 .advantages {
-  width: 320px;
+  background-color: $light-gray;
+}
+
+.advantages__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 260px;
+
+  padding-right: 30px;
+  padding-left: 30px;
+  margin: 0 auto;
 
   text-align: center;
-
-  background-color: $light-gray;
 }
 
 .advantages__text-header {
   width: 252px;
 
-  font-family: "Open Sans";
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -19,7 +28,6 @@
 .advantages__text {
   width: 254px;
 
-  font-family: "Open Sans";
   font-weight: 400;
   line-height: 24px;
 }
@@ -27,8 +35,56 @@
 .advantages__tagline {
   width: 204px;
 
-  font-family: "Open Sans";
   font-weight: 300;
   font-size: 24px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__wrapper {
+    position: relative;
+    width: 600px;
+
+    align-items: flex-end;
+  }
+
+  .advantages__image {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__wrapper {
+    width: 900px;
+    min-height: 670px;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .advantages__text-header {
+    width: 222px;
+
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    color: $black;
+  }
+
+  .advantages__text {
+    width: 238px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .advantages__image {
+    position: absolute;
+    top: 100px;
+    left: 720px;
+  }
 }
