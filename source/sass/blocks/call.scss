@@ -62,6 +62,10 @@
   .call__text--short {
     width: 438px;
   }
+
+  .call__text--long {
+    width: 490px
+  }
 }
 
 @media (min-width: $desktop-width) {

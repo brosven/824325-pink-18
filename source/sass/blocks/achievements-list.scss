@@ -1,0 +1,20 @@
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievements-list__item {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (min-width: $desktop-width) {
+  .achievements-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

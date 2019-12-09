@@ -1,4 +1,7 @@
 .communication-list {
+  display: flex;
+  flex-direction: column;
+
   list-style: none;
   margin: 0;
   padding: 0;
@@ -6,6 +9,7 @@
 
 .communication-list__header {
   font-size: 18px;
+  font-weight: 700;
   line-height: 18px;
 }
 
@@ -17,6 +21,13 @@
   color: $lipstick;
 
   text-align: center;
+  margin: 0;
+}
+
+.communication-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .communication-list__link {
@@ -33,5 +44,36 @@
     border: none;
 
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .communication-list {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 0 auto;
+  }
+
+  .communication-list__item {
+    margin: 0 auto;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .communication-list {
+    width: $desktop-width;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .communication-list__item:nth-child(2) {
+    order: 2;
   }
 }

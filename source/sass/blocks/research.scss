@@ -1,11 +1,19 @@
+@media (min-width: $mobile-width) {
+  .research {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .research {
+    display: block;
     background-color: $white;
   }
 
   .research__wrapper {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
     width: $tablet-width;
 
@@ -16,6 +24,7 @@
     width: 152px;
 
     font-size: 30px;
+    font-weight: 700;
     line-height: 36px;
     color: $black;
   }
@@ -32,6 +41,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .research {
+    background-color: $light-gray;
+  }
+
   .research__wrapper {
     width: $desktop-width;
 

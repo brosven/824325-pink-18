@@ -46,3 +46,29 @@
   padding: 0;
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .rate-table__cell {
+    min-width: 152px;
+
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .rate-table__text-header {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rate-table__cell {
+    min-width: 234px;
+
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .rate-table__text-header {
+    font-size: 16px;
+  }
+}
