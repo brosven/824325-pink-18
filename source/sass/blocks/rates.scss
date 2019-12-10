@@ -14,35 +14,35 @@
   overflow: hidden;
 }
 
-
 .rates__table {
   transform: translateX(-539px);
+}
 
 
-  @media (min-width: $tablet-width) {
-    .rates__tablet-wrapper {
-      width: $tablet-width;
+@media (min-width: $tablet-width) {
+  .rates__tablet-wrapper {
+    width: $tablet-width;
 
-      overflow: visible;
-    }
-
-    .rates__table {
-      transform: none;
-    }
-
-    .rates__buttons-wrapper {
-      display: none;
-    }
+    overflow: visible;
   }
 
-  @media (min-width: $desktop-width) {
-    .rates__tablet-wrapper {
-      width: $desktop-width;
-
-      overflow: visible;
-    }
-
-    .rates__table {
-      transform: none;
-    }
+  .rates__table {
+    transform: none;
   }
+
+  .rates__buttons-wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rates__tablet-wrapper {
+    width: $desktop-width;
+
+    overflow: visible;
+  }
+
+  .rates__table {
+    transform: none;
+  }
+}
