@@ -1,23 +1,222 @@
 .form {
-  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form__header {
+  text-align: center;
+  line-height: 30px;
   color: $lipstick;
 }
 
+.form__header--none {
+  display: none;
+}
+
+.form__header--size {
+  width: 202px;
+
+  line-height: 18px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.form__header--small {
+  width: 128px;
+}
+
+.form__text {
+  font-size: 18px;
+  line-height: 30px;
+}
+
 .form__achievements {
+  width: $mobile-width;
+  min-height: 604px;
+
+  margin: 0 auto;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  border: none;
+}
+
+.form__achievements-wrapper {
+  width: 100%;
+
   background-color: $light-gray;
 }
 
+.form__communication {
+  width: $mobile-width;
+
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 .form__app {
+  width: $mobile-width;
+  display: flex;
+  flex-direction: column;
+
+  border: none;
   background-color: $light-gray;
+
+  padding: 0;
+  margin: 0;
+}
+
+.form__app-wrapper {
+  width: 100%;
+
+  background-color: $light-gray;
+}
+
+.form__textarea-field {
+  width: $mobile-width;
+
+  border: none;
+
+  margin: 0 auto;
+  padding: 0;
 }
 
 .form__textarea {
   width: 276px;
+  min-height: 197px;
+
+  font-family: "Open Sans";
+  font-size: 18px;
+  color: $dark-blue;
+  text-align: center;
+
+  margin: 0 auto;
 }
 
 .form__text--pink {
   color: $lipstick;
+}
+
+.form__full-name {
+  width: $mobile-width;
+  min-height: 250px;
+
+  padding: 0;
+  margin: 0 auto;
+
+  border: 0;
+}
+
+.form__submit-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .form__full-name {
+    width: $tablet-width;
+    order: 1;
+  }
+
+  .form__communication {
+    width: 656px;
+    border: 2px solid $light-gray;
+    order: 3;
+  }
+
+  .form__app {
+    width: 614px;
+    border: 2px solid $light-gray;
+    background-color: white;
+  }
+
+  .form__app-wrapper {
+    width: $tablet-width;
+    background-color: white;
+    order: 2;
+  }
+
+  .form__header--none {
+    display: block;
+  }
+
+  .form__achievements {
+    width: 616px;
+    min-height: 549px;
+
+    justify-content: center;
+
+    border: 2px solid $light-gray;
+  }
+
+  .form__achievements-wrapper {
+    background-color: $white;
+    order: 4;
+  }
+
+  .form__textarea-field {
+    display: flex;
+    align-items: center;
+    width: 616px;
+    border: 2px solid $light-gray;
+    order: 5;
+  }
+
+  .form__textarea {
+    width: 496px;
+    border: 2px solid $light-gray;
+  }
+
+  .form__submit-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 616px;
+    order: 6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: $desktop-width;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 0 auto;
+  }
+
+  .form__full-name {
+    width: 430px;
+  }
+
+  .form__app-wrapper {
+    width: 431px;
+  }
+
+  .form__communication {
+    width: 936px;
+  }
+
+  .form__achievements {
+    width: 936px;
+    min-height: 228px;
+  }
+
+  .form__textarea-field {
+    width: 936px;
+  }
+
+  .form__textarea {
+    width: 816px;
+  }
+
+  .form__app {
+    width: 431px;
+  }
+
 }

@@ -40,6 +40,7 @@
           </ul>
         </div>
       </nav>
+    </div>
   </header>
 
   <main class="page-main">
@@ -167,42 +168,52 @@
           </div>
         </li>
       </ul>
-
-      <p class="users-photos__text">Затмите их всех!Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="users-photos__text-wrapper">
+        <p class="users-photos__text">Затмите их всех!</p>
+        <p class="users-photos__text">Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
     </section>
 
     <section class="editing-photo">
       <h2 class="visually-hidden">Редактирование вашего фото</h2>
-      <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фотография дороги зимой">
-      <form action="https://echo.htmlacademy.ru" method="POST" class="editing-photo__form form">
-        <ul class="editing-photo__list editing-list">
-          <li class="editing-list__item">
-            <label for="crop" class="visually-hidden">Обрезать фото</label>
-            <input type="checkbox" id="crop">
-          </li>
-          <li class="editing-list__item">
-            <label for="fill" class="visually-hidden">Заливка фото</label>
-            <input type="checkbox" id="fill">
-          </li>
-          <li class="editing-list__item">
-            <label for="contrast" class="visually-hidden">Контраст фото</label>
-            <input type="checkbox" id="contrast">
-          </li>
-        </ul>
-        <label for="editing-crop" class="visually-hidden">Настройка обрезания</label>
-        <input type="range" id="editing-crop">
+      <div class="editing-photo__wrapper">
+        <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фотография дороги зимой">
+        <form action="https://echo.htmlacademy.ru" method="POST" class="editing-photo__form form">
 
-        <label for="editing-fill" class="visually-hidden">Настройка заливки</label>
-        <input type="range" id="editing-fill">
+          <ul class="editing-list editing-photo__list">
+            <li class="editing-list__item">
+              <label for="crop" class="visually-hidden">Обрезать фото</label>
+              <input type="checkbox" id="crop">
+            </li>
+            <li class="editing-list__item">
+              <label for="fill" class="visually-hidden">Заливка фото</label>
+              <input type="checkbox" id="fill">
+            </li>
+            <li class="editing-list__item">
+              <label for="contrast" class="visually-hidden">Контраст фото</label>
+              <input type="checkbox" id="contrast">
+            </li>
+          </ul>
 
-        <label for="editing-contrast" class="visually-hidden">Настройка контраста</label>
-        <input type="range" id="editing-contrast">
+          <div class="editing-photo__input-wrapper">
+            <label for="editing-crop" class="visually-hidden">Настройка обрезания</label>
+            <input type="range" id="editing-crop" class="editing-photo__range editing-photo__range-cut">
 
-        <div class="editing-photo__buttons-wrapper">
-          <button type="submit" class="button button__post">Запостить</button>
-          <button type="button" class="button button__cancel">Отмена</button>
-        </div>
-      </form>
+            <label for="editing-fill" class="visually-hidden">Настройка заливки</label>
+            <input type="range" id="editing-fill"
+              class="editing-photo__range editing-photo__range-fill editing-photo__range-none">
+
+            <label for="editing-contrast" class="visually-hidden">Настройка контраста</label>
+            <input type="range" id="editing-contrast"
+              class="editing-photo__range editing-photo__range-contrast editing-photo__range-none">
+          </div>
+
+          <div class="editing-photo__buttons-wrapper">
+            <button type="submit" class="button button__post editing-photo__button">Запостить</button>
+            <button type="button" class="button button__cancel editing-photo__button">Отмена</button>
+          </div>
+        </form>
+      </div>
     </section>
   </main>
 
