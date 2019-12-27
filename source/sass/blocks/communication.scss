@@ -15,12 +15,55 @@
   margin: 0 auto;
 
   font-size: 24px;
-  line-height: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  padding-top: 42px;
+}
+
+.communication__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 37px;
+}
+
+.communication__list-item {
+  padding-bottom: 27px;
+}
+
+.communication-list__header {
+  margin: 0;
+}
+
+.communication__text {
+  padding-top: 4px;
 }
 
 @media (min-width: $tablet-width) {
   .communication {
     width: $tablet-width;
+  }
+
+  .communication__header {
+    width: 380px;
+
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+
+    padding-top: 45px;
+  }
+
+  .communication__list {
+    padding-top: 48px;
+  }
+
+  .communication__text {
+    padding-top: 7px;
+  }
+
+  .communication__list-item {
+    padding-bottom: 51px;
   }
 }
 
@@ -31,9 +74,11 @@
 
   .communication__header {
     width: 475px;
-  
+
     font-size: 50px;
     font-weight: 300;
-    line-height: 50px;
+    line-height: 60px;
+
+    padding-top: 65px;
   }
 }

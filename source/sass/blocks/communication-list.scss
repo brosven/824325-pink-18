@@ -3,8 +3,6 @@
   flex-direction: column;
 
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .communication-list__header {
@@ -17,7 +15,7 @@
   width: 240px;
 
   font-size: 24px;
-  line-height: 24px;
+  line-height: 29px;
   color: $lipstick;
 
   text-align: center;
@@ -49,7 +47,7 @@
 
 @media (min-width: $tablet-width) {
   .communication-list {
-    width: 550px;
+    width: 643px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -61,19 +59,30 @@
   .communication-list__item {
     margin: 0 auto;
   }
+
+  .communication-list__text {
+    font-weight: 300;
+  }
 }
 
 
 @media (min-width: $desktop-width) {
   .communication-list {
     width: $desktop-width;
+
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+
+    padding-top: 60px;
   }
 
   .communication-list__item:nth-child(2) {
     order: 2;
+  }
+
+  .communication-list__text {
+    padding-top: 27px;
   }
 }

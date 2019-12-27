@@ -97,3 +97,17 @@
     color: $white-30;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 300px;
+    padding-top: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button__download {
+    font-size: 21px;
+    line-height: 18px;
+  }
+}

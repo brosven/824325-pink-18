@@ -1,0 +1,38 @@
+.round-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  min-width: 58px;
+}
+
+.round-buttons__item {
+  display: block;
+
+  width: 6px;
+  height: 6px;
+
+  background-color: $dark-blue-30;
+  border-color: transparent;
+  border-radius: 50%;
+}
+
+.round-buttons__item--current {
+  background-color: transparent;
+
+  border: 2px solid $dark-blue;
+  border-radius: 50%;
+}
+
+@media (min-width: $desktop-width) {
+  .round-buttons__item {
+    background-color: transparent;
+    border: none;
+  }
+
+  .round-buttons__item--current {
+    background-color: transparent;
+    border: none;
+  }
+}

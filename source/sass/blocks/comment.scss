@@ -8,15 +8,118 @@
 .comment__header {
   font-family: "Open Sans";
   font-weight: 700;
+
+  margin: 0;
+}
+
+.comment__text {
+  width: 242px;
+  font-weight: 300;
+  margin: 0;
 }
 
 .comment__time {
   font-family: "Open Sans";
   font-weight: 300;
   font-size: 12px;
+  text-transform: uppercase;
 }
 
 .comment__likes {
   font-size: 12px;
   color: $lipstick;
+  text-transform: uppercase;
+  margin-left: 9px;
+}
+
+.comment__like-button {
+  border: none;
+  background-color: transparent;
+  padding-left: 1px;
+  padding-top: 16px;
+}
+
+.comment__like-button path {
+  fill: $lipstick;
+}
+
+.comment__text-wrapper {
+  width: 221px;
+
+  margin: 0 auto;
+  margin-top: -6px;
+  padding-left: 17px;
+  padding-right: 42px;
+  padding-top: 17px;
+  padding-bottom: 18px;
+
+  background-color: $light-gray;
+}
+
+@media(min-width: $tablet-width) {
+  .comment {
+    width: 300px;
+  }
+
+  .comment__text-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 115px;
+
+    padding-left: 28px;
+    padding-right: 51px;
+    padding-bottom: 23px;
+    margin: 0;
+  }
+
+  .comment__header {
+    padding-top: 7px;
+  }
+
+  .comment__text--long {
+    width: 522px;
+    padding-right: 30px;
+  }
+
+  .comment__button-wrapper {
+    width: 240px;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 12px;
+  }
+
+  .comment__like-button {
+    order: 2;
+    padding: 0;
+  }
+
+  .comment__likes {
+    margin: 0;
+  }
+
+  .comment__button-wrapper--panorama {
+    position: absolute;
+    top: 24px;
+    right: 30px;
+
+    width: 119px;
+    padding: 0;
+  }
+
+  .comment__like-button--panorama {
+    padding: 0;
+    padding-top: 3px;
+    margin-left: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment__text--long {
+    width: 841px;
+  }
 }

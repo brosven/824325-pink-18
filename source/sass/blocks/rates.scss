@@ -1,26 +1,53 @@
 .rates {
+  position: relative;
+  overflow: hidden;
+
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  min-height: 506px;
+  min-height: 503px;
   background-color: $light-gray;
+}
+
+
+.rates::before {
+  display: block;
+  position: absolute;
+  top: -37px;
+  left: 0;
+
+  content: url(../img/bg-triangle-white.svg);
+
+  width: 100%;
 }
 
 .rates__tablet-wrapper {
   width: $mobile-width;
 
-  margin: auto;
+  margin: 0 auto;
+  padding-top: 122px;
   overflow: hidden;
 }
 
 .rates__table {
-  transform: translateX(-539px);
+  transform: translateX(-530px);
+}
+
+.rates__buttons-wrapper {
+  padding-top: 39px;
+  padding-bottom: 40px;
 }
 
 @media (min-width: $tablet-width) {
+  .rates {
+    min-height: 389px;
+  }
+
   .rates__tablet-wrapper {
     width: $tablet-width;
+
+    padding-top: 100px;
 
     overflow: visible;
   }
@@ -30,7 +57,14 @@
   }
 
   .rates__buttons-wrapper {
-    display: none;
+    visibility: hidden;
+    position: absolute;
+    top: -999999999px;
+    padding: 0;
+  }
+
+  .rates::before {
+    top: -31px;
   }
 }
 
@@ -38,10 +72,18 @@
   .rates__tablet-wrapper {
     width: $desktop-width;
 
+    padding-top: 134px;
+    padding-bottom: 95px;
+
     overflow: visible;
   }
 
   .rates__table {
     transform: none;
+  }
+
+  .rates::before {
+    top: -29px;
+    transform: rotate(1deg);
   }
 }

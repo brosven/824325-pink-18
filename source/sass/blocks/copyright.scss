@@ -1,0 +1,12 @@
+.copyright__path {
+  fill: $lipstick;
+}
+
+.copyright__link:hover .copyright__path {
+  fill: $black;
+}
+
+.copyright__link:active {
+    opacity: 0.3;
+  }
+

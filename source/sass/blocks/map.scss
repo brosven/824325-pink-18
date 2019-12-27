@@ -1,4 +1,40 @@
 .map__item {
   width: 100%;
+  height: 214px;
   border: none;
+}
+
+.map {
+  position: relative;
+}
+
+.map::before {
+  content: url(../img/bg-triangle-white-footer.svg);
+
+  position: absolute;
+  display: block;
+
+  top: -11px;
+  left: -42%;
+}
+
+@media (min-width: $tablet-width) {
+  .map__item {
+    height: 465px;
+  }
+
+  .map::before {
+    top: 0;
+    left: 4%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+.map__item {
+  height: 554px;
+}
+
+  .map::before {
+    left: 18%;
+  }
 }
