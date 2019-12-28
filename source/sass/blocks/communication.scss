@@ -70,6 +70,7 @@
 @media (min-width: $desktop-width) {
   .communication {
     width: $desktop-width;
+    min-height: 386px;
   }
 
   .communication__header {
@@ -79,6 +80,10 @@
     font-weight: 300;
     line-height: 60px;
 
-    padding-top: 65px;
+    padding-top: 63px;
+  }
+
+  .communication__list-item {
+    padding: 0;
   }
 }

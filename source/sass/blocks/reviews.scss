@@ -117,13 +117,15 @@
   }
 
   .reviews__block {
-    padding-top: 188px;
+    padding-top: 186px;
   }
 
   .reviews__text {
-    width: 687px;
+    width: 688px;
 
     font-size: 18px;
+
+    padding-bottom: 36px;
   }
 
   .reviews__author {
@@ -160,5 +162,9 @@
     visibility: hidden;
     position: absolute;
     top: -99999999999999px;
+  }
+
+  .reviews__button-wrapper {
+    padding: 0;
   }
 }

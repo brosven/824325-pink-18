@@ -9,13 +9,18 @@
 }
 
 .map::before {
-  content: url(../img/bg-triangle-white-footer.svg);
+  content: "";
 
   position: absolute;
   display: block;
+  width: 486px;
+  height: 65px;
 
-  top: -11px;
-  left: -42%;
+  background-image: url(../img/bg-triangle-white-footer.svg);
+  background-repeat: no-repeat;
+
+  top: -13px;
+  left: -43%;
 }
 
 @media (min-width: $tablet-width) {
@@ -24,17 +29,49 @@
   }
 
   .map::before {
-    top: 0;
-    left: 4%;
+    width: 660px;
+    top: 16px;
+    left: 5%;
+  }
+
+  .map::before {
+    display: none;
+  }
+
+  .map::after {
+    content: "";
+    position: absolute;
+
+    top: 0px;
+    left: -47px;
+    display: block;
+
+
+    width: 0;
+    height: 0;
+
+    border-left: 370px solid transparent;
+    border-right: 382px solid transparent;
+    border-bottom: 78px solid #ffffff;
+
+    transform: rotate(180deg);
   }
 }
 
 @media (min-width: $desktop-width) {
-.map__item {
-  height: 554px;
-}
+  .map__item {
+    height: 554px;
+  }
 
   .map::before {
     left: 18%;
+  }
+
+  .map::after {
+    top: 0px;
+    left: 0px;
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-bottom: 82px solid #ffffff;
   }
 }
