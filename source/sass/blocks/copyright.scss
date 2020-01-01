@@ -10,3 +10,8 @@
     opacity: 0.3;
   }
 
+  @media (min-width: $desktop-width) {
+    .copyright__logo {
+      padding-top: 12px;
+    }
+  }
