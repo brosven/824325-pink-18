@@ -25,6 +25,11 @@
   border-radius: 50%;
 }
 
+.round-buttons__item--current:hover,
+.round-buttons__item--current:active {
+  opacity: 1;
+}
+
 @media (min-width: $desktop-width) {
   .round-buttons__item {
     background-color: transparent;
@@ -34,5 +39,13 @@
   .round-buttons__item--current {
     background-color: transparent;
     border: none;
+  }
+
+  .round-buttons__item--current:hover {
+    opacity: 0.6;
+  }
+
+  .round-buttons__item--current:active {
+    opacity: 0.1;
   }
 }

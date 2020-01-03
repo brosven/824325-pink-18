@@ -51,7 +51,7 @@
     text-transform: none;
 
     padding-top: 45px;
-    padding-bottom: 44px;
+    padding-bottom: 33px;
   }
 
   .site-list__item {
@@ -60,7 +60,13 @@
     border: none;
   }
 
- .site-list__link:active {
-   border-bottom: 2px solid $white;
- }
+  .site-list__item--current {
+    border-bottom: 2px solid $white;
+    padding-bottom: 11px;
+  }
+
+  .site-list__link:active {
+    border-bottom: 2px solid $white;
+    padding-bottom: 11px;
+  }
 }
