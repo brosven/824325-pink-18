@@ -34,6 +34,7 @@
   background-size: 100%;
 
 
+  padding-top: 30px;
   min-height: 139px;
 }
 
@@ -60,12 +61,19 @@
     line-height: 48px;
   }
 
+  .page-representation__header--short {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
   .page-representation--with-image {
     background-image: url(../img/bg-back-tablet@1x.jpg);
     background-position: bottom 440px left -270px;
 
     width: 100%;
-    min-height: 279px;
+    min-height: 261px;
+    
+    padding-top: 68px;
   }
 
   .page-representation__wrapper {
@@ -79,7 +87,7 @@
     background-repeat: no-repeat;
     background-position: top;
 
-    min-height: 344px;
+    min-height: 368px;
   }
 
   .page-representation {
@@ -106,6 +114,6 @@
 
   .page-representation__header--short {
     width: 384px;
-    margin-top: 121px;
+    margin-top: 147px;
   }
 }

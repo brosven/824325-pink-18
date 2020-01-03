@@ -18,6 +18,10 @@
   margin: 0 auto;
 }
 
+.call__wrapper--small {
+  padding-top: 33px;
+}
+
 .call__wrapper::after {
   content: url(../img/bg-triangle-gray.svg);
   position: absolute;
@@ -63,6 +67,11 @@
     padding-bottom: 45px;
   }
 
+  .call__wrapper--small {
+    padding-top: 75px;
+    padding-bottom: 58px;
+  }
+
   .call__header {
     font-size: 40px;
     line-height: 48px;
@@ -103,6 +112,11 @@
 
     padding-top: 66px;
     padding-bottom: 76px;
+  }
+
+  .call__wrapper--small {
+    padding-top: 75px;
+    padding-bottom: 70px;
   }
 
   .call__header {

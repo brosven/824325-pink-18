@@ -103,6 +103,14 @@
     width: 300px;
     padding-top: 16px;
   }
+
+  .button__post {
+    width: 260px;
+  }
+
+  .button__cancel {
+    width: 260px;
+  }
 }
 
 @media (min-width: $desktop-width) {
