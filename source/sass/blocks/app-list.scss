@@ -40,7 +40,7 @@
   background-color: $white;
 }
 
-.app-list__radio:checked + .app-list__label::after {
+.app-list__radio:checked+.app-list__label::after {
   content: "";
 
   position: absolute;

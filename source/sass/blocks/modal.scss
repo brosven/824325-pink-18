@@ -3,6 +3,27 @@
   background-color: $white;
 
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__error {
+  position: absolute;
+
+  top: 329%;
+  left: 0;
+
+  padding-top: 22px;
+  padding-bottom: 48px;
+}
+
+.modal__success {
+  position: absolute;
+
+  top: 443%;
+  left: 0;
 }
 
 .modal__header {
@@ -14,8 +35,28 @@
 
 .modal__text {
   line-height: 24px;
+
+  margin: 0;
+  padding-top: 7px;
+  margin-bottom: 34px;
+}
+
+.modal__text--long {
+  width: 266px;
 }
 
 .modal__button-wrapper {
+  width: 100%;
+
+  padding-top: 42px;
+  padding-bottom: 50px;
+
   background-color: $light-gray;
 }
+
+.modal__button--success {
+  margin: 0 auto;
+  border-color: $light-gray;
+}
+
+
