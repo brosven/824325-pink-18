@@ -4,12 +4,57 @@
 
   list-style: none;
   padding: 0;
+  padding-top: 46px;
   margin: 0;
 }
 
 .achievements-list__item {
   display: flex;
   flex-direction: row;
+
+  margin-bottom: 52px;
+}
+
+.achievements-list__item:last-child {
+  margin: 0;
+}
+
+.achievements-list__checkbox {
+  display: none;
+}
+
+.achievements-list__label {
+  position: relative;
+  padding-left: 89px;
+}
+
+.achievements-list__label::before {
+  content: "";
+  position: absolute;
+
+  top: -17%;
+  left: 7%;
+
+  width: 35px;
+  height: 35px;
+
+  border: 2px solid $gray;
+
+  background-color: $white;
+}
+
+.achievements-list__checkbox:checked + .achievements-list__label::after {
+ position: absolute;
+
+ content: "";
+
+ top: 15%;
+ left: 11%;
+
+ width: 22px;
+ height: 16px;
+
+ background-image: url(../img/icon-yes.svg);
 }
 
 @media (min-width: $desktop-width) {

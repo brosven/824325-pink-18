@@ -84,10 +84,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .panorama__comment {
-    width: $desktop-width;
-  }
-
   .panorama__comment::before {
     top: 53px;
     left: 84%;

@@ -5,9 +5,12 @@
 }
 
 .form__header {
-  text-align: center;
   line-height: 30px;
   color: $lipstick;
+  text-transform: uppercase;
+
+  margin-left: 43px;
+  margin-bottom: 4px;
 }
 
 .form__header--none {
@@ -15,15 +18,13 @@
 }
 
 .form__header--size {
-  width: 202px;
+  width: 218px;
 
   line-height: 18px;
+  text-align: center;
+
   padding: 0;
   margin: 0 auto;
-}
-
-.form__header--small {
-  width: 128px;
 }
 
 .form__text {
@@ -31,9 +32,20 @@
   line-height: 30px;
 }
 
+.form__input {
+  width: 255px;
+  height: 57px;
+
+  border: 2px solid $gray;
+
+  margin-left: 20px;
+  margin-bottom: 18px;
+  padding-left: 21px;
+}
+
 .form__achievements {
   width: $mobile-width;
-  min-height: 604px;
+  min-height: 567px;
 
   margin: 0 auto;
   padding: 0;
@@ -48,6 +60,8 @@
 .form__achievements-wrapper {
   width: 100%;
 
+  padding-top: 38px;
+
   background-color: $light-gray;
 }
 
@@ -57,6 +71,12 @@
   border: none;
   padding: 0;
   margin: 0;
+}
+
+.form__app-list {
+  padding: 0;
+  padding-top: 41px;
+  padding-bottom: 47px;
 }
 
 .form__app {
@@ -74,6 +94,8 @@
 .form__app-wrapper {
   width: 100%;
 
+  padding-top: 38px;
+
   background-color: $light-gray;
 }
 
@@ -87,15 +109,25 @@
 }
 
 .form__textarea {
-  width: 276px;
-  min-height: 197px;
+  width: 237px;
+  min-height: 179px;
 
   font-family: "Open Sans";
   font-size: 18px;
   color: $dark-blue;
-  text-align: center;
 
-  margin: 0 auto;
+  border: 1px solid $gray;
+  border-radius: 3px;
+
+  margin-left: 21px;
+  padding-top: 16px;
+  padding-left: 19px;
+  padding-right: 20px;
+}
+
+.form__area-header {
+  padding-top: 39px;
+  margin-bottom: 16px;
 }
 
 .form__text--pink {
@@ -107,6 +139,7 @@
   min-height: 250px;
 
   padding: 0;
+  padding-bottom: 24px;
   margin: 0 auto;
 
   border: 0;
@@ -115,7 +148,20 @@
 .form__submit-wrapper {
   display: flex;
   flex-direction: column;
+
+  padding-top: 45px;
 }
+
+.form__text-bottom {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+
+  padding-top: 17px;
+  padding-left: 49px;
+  padding-right: 40px;
+}
+
 
 @media (min-width: $tablet-width) {
   .form__full-name {
