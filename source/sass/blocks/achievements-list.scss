@@ -82,4 +82,33 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  .achievements-list__item:last-child {
+    margin-left: 5px;
+  }
+
+  .achievements-list__item--first {
+    order: 1;
+  }
+
+  .achievements-list__item--second {
+   order: 4;
+  }
+
+  .achievements-list__item--third {
+    order: 2;
+  }
+
+  .achievements-list__item--fourth {
+    order: 5;
+    margin-left: 38px;
+  }
+
+  .achievements-list__item--fifth {
+  order: 3;
+  }
+
+  .achievements-list__item--sixth {
+    order: 6;
+  }
 }

@@ -27,3 +27,19 @@
     margin-bottom: 25px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts-list {
+    display: flex;
+    justify-content: space-between;
+
+    width: 822px;
+
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
+
+  .contacts-list__item {
+    margin-bottom: 10px;
+  }
+}

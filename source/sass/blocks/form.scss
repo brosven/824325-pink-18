@@ -162,6 +162,10 @@
   padding-right: 40px;
 }
 
+.form__text--hidden {
+  display: none;
+}
+
 
 @media (min-width: $tablet-width) {
   .form__full-name {
@@ -322,8 +326,20 @@
     flex-direction: row;
     justify-content: space-between;
 
-    width: 616px;
+    width: 625px;
     order: 6;
+
+    padding-top: 64px;
+    padding-bottom: 46px;
+  }
+
+  .form__text-bottom {
+    padding-top: 5px;
+    padding-right: 1px;
+  }
+
+  .form__text--hidden {
+    display: none;
   }
 }
 
@@ -332,12 +348,24 @@
     width: $desktop-width;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
 
     margin: 0 auto;
   }
 
+  .form__header {
+    margin-left: 0;
+  }
+
+  .form__header--head {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
   .form__full-name {
     width: 430px;
+    margin-left: 10px;
+    margin-right: 69px;
   }
 
   .form__app-wrapper {
@@ -346,23 +374,83 @@
 
   .form__communication {
     width: 936px;
+    margin: 0 auto;
+  }
+
+  .form__communication-header--phone {
+    margin-left: 19px;
+  }
+
+  .form__communication-header--email {
+    margin-left: 19px;
+  }
+
+  .form__communication-header--phone::before {
+    height: 62px;
+
+    top: -71px;
+    right: -1px;
+  }
+
+  .form__communication-header--email::before {
+    height: 62px;
+
+    top: -71px;
+    right: 1px;
   }
 
   .form__achievements {
     width: 936px;
     min-height: 228px;
+
+    padding-bottom: 7px;
   }
 
   .form__textarea-field {
     width: 936px;
+
+    padding-bottom: 44px;
   }
 
   .form__textarea {
-    width: 816px;
+    width: 779px;
+    min-height: 107px;
+
+    padding-top: 13px;
   }
 
   .form__app {
     width: 431px;
   }
 
+  .form__app-wrapper {
+    padding-top: 17px;
+  }
+
+  .form__input {
+    width: 314px;
+  }
+
+  .form__communication-input {
+    width: 350px;
+
+    margin-left: 0;
+    margin-bottom: 8px;
+  }
+
+  .form__input--long {
+    width: 354px;
+  }
+
+  .form__text--hidden {
+    display: inline-block;
+  }
+
+  .form__submit-wrapper {
+    width: 945px;
+
+    margin: 0 auto;
+    padding-top: 62px;
+    padding-bottom: 0;
+  }
 }

@@ -27,7 +27,15 @@
 
 
 @media (min-width: $desktop-width) {
-  .full-name-list__item {
-    flex-direction: column;
-  }
+ .full-name-list {
+   padding-top: 30px;
+ }
+
+ .full-name-list__item:last-child {
+   margin-bottom: 0;
+ }
+
+ .full-name-list__item {
+   margin-bottom: 35px;
+ }
 }

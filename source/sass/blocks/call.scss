@@ -66,7 +66,7 @@
   width: 253px;
 }
 
-.call__text--hidden {
+.call__break {
   display: none;
 }
 
@@ -104,10 +104,8 @@
     line-height: 30px;
   }
 
-  .call__text--hidden {
+  .call__break {
     display: block;
-
-    margin: 0;
   }
 
   .call__text--short {
@@ -116,10 +114,6 @@
 
   .call__text--long {
     width: 490px
-  }
-
-  .call__text--bottom {
-    padding-top: 43px;
   }
 
   .call__wrapper::after {
@@ -140,6 +134,10 @@
     padding-bottom: 70px;
   }
 
+  .call__wrapper--no-triangle {
+    padding-bottom: 54px;
+  }
+
   .call__header {
     font-size: 50px;
     line-height: 60px;
@@ -155,5 +153,14 @@
 
   .call__text--short {
     width: 572px;
+  }
+
+  .call__text--long {
+    width: 769px;
+    padding-top: 27px;
+  }
+
+  .call__break {
+    display: none;
   }
 }

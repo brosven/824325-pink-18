@@ -113,6 +113,11 @@
   .button__cancel {
     width: 260px;
   }
+
+  .button__send-form {
+    width: 305px;
+    height: 70px;
+  }
 }
 
 @media (min-width: $desktop-width) {

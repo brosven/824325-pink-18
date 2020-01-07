@@ -69,3 +69,17 @@
     left: 70px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .app-list__label {
+    padding-left: 134px;
+  }
+
+  .app-list__label::before {
+    left: 75px;
+  }
+
+  .app-list__radio:checked+.app-list__label::after {
+    left: 86px;
+  }
+}
