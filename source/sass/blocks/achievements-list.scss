@@ -32,8 +32,8 @@
   content: "";
   position: absolute;
 
-  top: -17%;
-  left: 7%;
+  top: -6px;
+  left: 20px;
 
   width: 35px;
   height: 35px;
@@ -43,18 +43,38 @@
   background-color: $white;
 }
 
-.achievements-list__checkbox:checked + .achievements-list__label::after {
- position: absolute;
+.achievements-list__checkbox:checked+.achievements-list__label::after {
+  position: absolute;
 
- content: "";
+  content: "";
 
- top: 15%;
- left: 11%;
+  top: 5px;
+  left: 29px;
 
- width: 22px;
- height: 16px;
+  width: 22px;
+  height: 16px;
 
- background-image: url(../img/icon-yes.svg);
+  background-image: url(../img/icon-yes.svg);
+}
+
+@media (min-width: $tablet-width) {
+  .achievements-list {
+    padding-top: 49px;
+  }
+
+  .achievements-list__label {
+    padding-left: 117px;
+  }
+
+  .achievements-list__label::before {
+    left: 57px;
+    top: -5px;
+  }
+
+  .achievements-list__checkbox:checked+.achievements-list__label::after {
+    top: 7px;
+    left: 67px;
+  }
 }
 
 @media (min-width: $desktop-width) {

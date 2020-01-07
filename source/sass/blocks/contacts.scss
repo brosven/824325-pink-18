@@ -11,3 +11,19 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts-list {
+    position: relative;
+    padding-top: 37px;
+    padding-bottom: 23px;
+  }
+
+  .contacts-list__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .contacts-list__item {
+    margin-bottom: 25px;
+  }
+}

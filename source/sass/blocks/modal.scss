@@ -17,6 +17,8 @@
 
   padding-top: 22px;
   padding-bottom: 48px;
+
+  box-shadow: 0 7px 15px 0 $modal-shadow;
 }
 
 .modal__success {
@@ -24,6 +26,8 @@
 
   top: 443%;
   left: 0;
+
+  box-shadow: 0 7px 15px 0 $modal-shadow;
 }
 
 .modal__header {
@@ -58,5 +62,3 @@
   margin: 0 auto;
   border-color: $light-gray;
 }
-
-

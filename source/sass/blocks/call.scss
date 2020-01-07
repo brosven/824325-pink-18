@@ -66,6 +66,10 @@
   width: 253px;
 }
 
+.call__text--hidden {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .call__wrapper {
     width: 542px;
@@ -100,12 +104,22 @@
     line-height: 30px;
   }
 
+  .call__text--hidden {
+    display: block;
+
+    margin: 0;
+  }
+
   .call__text--short {
     width: 438px;
   }
 
   .call__text--long {
     width: 490px
+  }
+
+  .call__text--bottom {
+    padding-top: 43px;
   }
 
   .call__wrapper::after {
