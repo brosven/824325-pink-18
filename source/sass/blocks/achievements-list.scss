@@ -43,6 +43,14 @@
   background-color: $white;
 }
 
+.achievements-list__item:hover .achievements-list__label::before {
+  border-color: $dark-blue;
+}
+
+.achievements-list__item:active .achievements-list__label::before {
+  border-color: $lipstick;
+}
+
 .achievements-list__checkbox:checked+.achievements-list__label::after {
   position: absolute;
 
@@ -92,7 +100,7 @@
   }
 
   .achievements-list__item--second {
-   order: 4;
+    order: 4;
   }
 
   .achievements-list__item--third {
@@ -105,7 +113,7 @@
   }
 
   .achievements-list__item--fifth {
-  order: 3;
+    order: 3;
   }
 
   .achievements-list__item--sixth {

@@ -41,6 +41,15 @@
   margin-left: 20px;
   margin-bottom: 18px;
   padding-left: 21px;
+  outline-color: $lipstick;
+
+  &:hover {
+    border-color: $dark-blue;
+  }
+
+  &:active {
+    border-color: $lipstick;
+  }
 }
 
 .form__achievements {
@@ -341,6 +350,10 @@
   .form__text--hidden {
     display: none;
   }
+
+  .form__button {
+    margin: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -452,9 +465,5 @@
     margin: 0 auto;
     padding-top: 62px;
     padding-bottom: 0;
-  }
-
-  .form__button {
-    margin: 0;
   }
 }

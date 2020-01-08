@@ -135,6 +135,8 @@
 
     top: 188%;
     left: 9%;
+
+    padding-bottom: 0;
   }
 
   .modal__success {
@@ -163,7 +165,13 @@
   }
 
   .modal__button-wrapper--desktop {
-    padding-bottom: 1px;
-    padding-top: 71px;
+    padding-top: 48px;
+    padding-bottom: 50px;
+
+    background-color: $light-gray;
+  }
+
+  .modal__text--error {
+    margin-bottom: 61px;
   }
 }
