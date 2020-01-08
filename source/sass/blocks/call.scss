@@ -70,6 +70,10 @@
   display: none;
 }
 
+.call__text-hidden {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .call__wrapper {
     width: 542px;
@@ -104,6 +108,10 @@
     line-height: 30px;
   }
 
+  .call__text-hidden {
+    display: inline-block;
+  }
+
   .call__break {
     display: block;
   }
@@ -113,7 +121,8 @@
   }
 
   .call__text--long {
-    width: 490px
+    width: 490px;
+    padding-top: 43px;
   }
 
   .call__wrapper::after {
@@ -158,6 +167,10 @@
   .call__text--long {
     width: 769px;
     padding-top: 27px;
+  }
+
+  .call__text-hidden {
+    display: inline-block;
   }
 
   .call__break {
