@@ -48,6 +48,10 @@
     background-image: url(../img/iphone-hand-tablet@1x.png), url(../img/bg-back-tablet@1x.jpg);
     background-position: bottom, top;
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url(../img/iphone-hand-tablet@2x.png), url(../img/bg-back-tablet@2x.jpg);
+    }
   }
 
   .download-app__representation {
@@ -87,6 +91,10 @@
     background-repeat: no-repeat;
 
     margin: 0 auto;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url(../img/iphone-hand-desktop@2x.png), url(../img/bg-back-desktop@2x.jpg);
+    }
   }
 
   .download-app__representation {
