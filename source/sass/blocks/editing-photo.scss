@@ -83,13 +83,6 @@
   border-top: 1px solid $dark-blue-30;
 }
 
-.editing__image--tablet {
-  display: none;
-}
-
-.editing__image--desktop {
-  display: none;
-}
 
 @media (min-width: $tablet-width) {
   .editing-photo__wrapper {
@@ -179,16 +172,9 @@
     display: block;
   }
 
-  .editing__image--mobile {
-    display: none;
-  }
-
-  .editing__image--tablet {
-    display: block;
-  }
-
-  .editing__image--desktop {
-    display: none;
+  .editing-photo__image {
+    width: 300px;
+    height: 400px;
   }
 }
 
@@ -249,17 +235,5 @@
 
   .editing-photo__button {
     width: 183px;
-  }
-
-  .editing__image--mobile {
-    display: none;
-  }
-
-  .editing__image--tablet {
-    display: none;
-  }
-
-  .editing__image--desktop {
-    display: block;
   }
 }
