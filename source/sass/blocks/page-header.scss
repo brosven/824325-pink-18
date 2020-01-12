@@ -50,13 +50,28 @@
   fill: $white;
 }
 
-.page-header__logo a[href] {
+.page-header__logo {
   &:hover .page-header__logo-image {
     fill: $lipstick;
   }
 
   &:active .page-header__logo-image {
     fill: $white;
+    opacity: 0.3;
+  }
+}
+
+.page-header__icon-toggle {
+  fill: $white;
+}
+
+.page-header__toggle {
+  &:hover .page-header__icon-toggle {
+    fill: $lipstick;
+  }
+
+  &:active .page-headr__icon-toggle {
+    fill: $lipstick;
     opacity: 0.3;
   }
 }

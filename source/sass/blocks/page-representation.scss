@@ -16,6 +16,10 @@
   }
 }
 
+.page-representation--close {
+  padding-top: 89px;
+}
+
 .page-representation__header {
   width: 228px;
 
@@ -87,6 +91,10 @@
     @media (min-resolution: $retina-dppx) {
       background-image: url(../img/bg-back-tablet@2x.jpg);
     }
+  }
+
+  .page-representation--close {
+    padding-top: 178px;
   }
 
   .page-representation__wrapper {
