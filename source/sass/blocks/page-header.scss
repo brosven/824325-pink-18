@@ -38,11 +38,29 @@
 .page-header__toggle {
   background-color: transparent;
   border: none;
+
+  cursor: pointer;
 }
 
 .page-header__top-wrapper {
   border-bottom: 1px solid $black;
 }
+
+.page-header__logo-image {
+  fill: $white;
+}
+
+.page-header__logo a[href] {
+  &:hover .page-header__logo-image {
+    fill: $lipstick;
+  }
+
+  &:active .page-header__logo-image {
+    fill: $white;
+    opacity: 0.3;
+  }
+}
+
 
 @media (min-width: 0) {
   .page-header__logo-image--tablet {
