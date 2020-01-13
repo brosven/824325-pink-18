@@ -1,17 +1,19 @@
-.copyright__path {
+.copyright__logo {
   fill: $lipstick;
 }
 
-.copyright__link:hover .copyright__path {
-  fill: $black;
+.copyright__link .copyright__logo {
+  &:hover {
+    fill: $black;
+  }
 }
 
 .copyright__link:active {
-    opacity: 0.3;
-  }
+  opacity: 0.3;
+}
 
-  @media (min-width: $desktop-width) {
-    .copyright__logo {
-      padding-top: 12px;
-    }
+@media (min-width: $desktop-width) {
+  .copyright__logo {
+    padding-top: 12px;
   }
+}

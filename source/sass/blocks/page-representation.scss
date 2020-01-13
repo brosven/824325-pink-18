@@ -16,10 +16,6 @@
   }
 }
 
-.page-representation--close {
-  padding-top: 89px;
-}
-
 .page-representation__header {
   width: 228px;
 
@@ -39,7 +35,7 @@
 .page-representation--with-image {
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
-  background-position: top -67px left 0px;
+  background-position: bottom -226px left 0px;
   background-size: 100%;
 
 
@@ -55,6 +51,10 @@
   width: $mobile-width;
 
   margin: 0 auto;
+}
+
+.page-representation--close {
+  padding-top: 89px;
 }
 
 @media (min-width: $tablet-width) {

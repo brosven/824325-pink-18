@@ -36,6 +36,20 @@
   min-width: 129px;
 }
 
+.page-footer__logo {
+  fill: $black;
+}
+
+.page-footer__page-link {
+  &:hover .page-footer__logo {
+    fill: $lipstick;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-footer {
     position: relative;
