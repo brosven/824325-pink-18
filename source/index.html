@@ -83,7 +83,7 @@
           <a href="https://www.apple.com/ru/ios/app-store/" class="download-app__button button button__download">Скачать
             приложение</a>
           <ul class="download-app__list markets-list">
-            <li class="markets-list__item">
+            <li class="markets-list__item markets-list__item--apple">
               <a class="markets-list__link" href="https://www.apple.com/ru/ios/app-store/">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                   y="0px" width="46.21px" height="56.753px" viewBox="0 0 46.21 56.753"
@@ -93,7 +93,7 @@
                 </svg>
                 <span class="visually-hidden">Скачать приложение на ios</span></a>
             </li>
-            <li class="markets-list__item">
+            <li class="markets-list__item markets-list__item--android">
               <a class="markets-list__link" href="https://play.google.com/store/apps?hl=ru">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                   y="0px" width="42.084px" height="47.041px" viewBox="0 0 42.084 47.041"
@@ -109,7 +109,7 @@
                 </svg>
                 <span class="visually-hidden">Скачать приложение на android</span></a>
             </li>
-            <li class="markets-list__item">
+            <li class="markets-list__item markets-list__item--windows">
               <a class="markets-list__link" href="https://www.microsoft.com/ru-ru/store/apps/windows">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                   y="0px" width="43.922px" height="41.992px" viewBox="0 0 43.922 41.992"
@@ -214,11 +214,8 @@
         <a href="#"
           class="reviews__button  reviews__button--left reviews__button--arrow round-buttons__item round-buttons__item--current ">
           <span class="visually-hidden">Первый комментарий</span>
-          <svg version="1.1" class="reviews__button-left" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px"
-            viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
-            <path
-              d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z" />
+          <svg class="reviews__button-left" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719">
+            <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
           </svg>
         </a>
         <a href="#" class="reviews__button reviews__button--center round-buttons__item">
@@ -226,11 +223,8 @@
         </a>
         <a href="#" class="reviews__button reviews__button--right reviews__button--arrow round-buttons__item">
           <span class="visually-hidden">Третий комментарий</span>
-          <svg version="1.1" class="reviews__button-right" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px"
-            viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
-            <path
-              d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z" />
+          <svg class="reviews__button-right" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719">
+            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
           </svg>
         </a>
       </div>
