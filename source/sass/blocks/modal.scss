@@ -12,7 +12,7 @@
 .modal__error {
   position: absolute;
 
-  top: 329%;
+  top: 1426px;
   left: 0;
 
   padding-top: 22px;
@@ -24,7 +24,7 @@
 .modal__success {
   position: absolute;
 
-  top: 443%;
+  top: 1921px;
   left: 0;
 
   box-shadow: 0 7px 15px 0 $modal-shadow;
@@ -77,15 +77,15 @@
   .modal__error {
     padding-top: 8px;
 
-    top: 268%;
-    left: 15%;
+    top: 1162px;
+    left: 99px;
 
     z-index: 10;
   }
 
   .modal__success {
-    top: 378%;
-    left: 15%;
+    top: 1639px;
+    left: 99px;
 
     padding-top: 5px;
 
@@ -133,8 +133,8 @@
 
     padding-top: 14px;
 
-    top: 188%;
-    left: 9%;
+    top: 815px;
+    left: 87px;
 
     padding-bottom: 0;
   }
@@ -144,8 +144,8 @@
 
     padding-top: 10px;
 
-    left: 9%;
-    top: 294%;
+    left: 87px;
+    top: 1275px;
   }
 
   .modal__button--success {
