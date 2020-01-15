@@ -13,6 +13,7 @@
 
   @media (min-resolution: $retina-dppx) {
     background-image: url(../img/iphone-hand-mobile@2x.png), url(../img/bg-back-mobile@2x.jpg);
+    background-size: 258px 286px, 320px 462px;
   }
 }
 
@@ -54,7 +55,7 @@
 }
 
 .page-representation--close {
-  padding-top: 89px;
+  padding-top: 100px;
 }
 
 @media (min-width: $tablet-width) {
@@ -90,6 +91,7 @@
 
     @media (min-resolution: $retina-dppx) {
       background-image: url(../img/bg-back-tablet@2x.jpg);
+      background-size: 1200px 729px;
     }
   }
 
@@ -112,6 +114,7 @@
 
     @media (min-resolution: $retina-dppx) {
       background-image: url(../img/bg-back-desktop@2x.jpg);
+      background-size: 2560px 883px;
     }
   }
 
