@@ -46,6 +46,8 @@
   }
 
   &:active {
+    fill: $black;
+
     opacity: 0.3;
   }
 }

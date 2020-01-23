@@ -99,7 +99,13 @@
   &:active {
     background-color: $dark-green;
 
-    color: $white-30;
+    color: $black-30;
+  }
+
+  &:disabled {
+    background-color: $gray;
+
+    color: $white;
   }
 }
 
