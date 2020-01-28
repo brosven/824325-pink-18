@@ -12,11 +12,11 @@
   display: none;
 }
 
-.page-header--close .page-header__icon-toggle--close {
+.page-header__icon-toggle--hide .page-header__icon-toggle--close {
   display: block;
 }
 
-.page-header--close .page-header__icon-toggle--open {
+.page-header__icon-toggle--close .page-header__icon-toggle--open {
   display: none;
 }
 
@@ -46,7 +46,7 @@
   border-bottom: 1px solid $black;
 }
 
-.page-header__logo-image {
+.page-header__logo {
   fill: $white;
 }
 
@@ -61,7 +61,7 @@
   }
 }
 
-.page-header__icon-toggle {
+.page-header__toggle {
   fill: $white;
 }
 
